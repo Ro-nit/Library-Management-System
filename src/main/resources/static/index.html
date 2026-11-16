@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="loginPage" style="display: block">
+        <h1>Library Management System</h1>
+        <h2>Member Login</h2>
+
+        <label>Member ID: </label>
+        <input type="number" id="memberId">
+        <button onclick="showOptions()">Continue</button>
+    </div>
+
+    <br>
+
+    <label>Full Issue History</label>
+    <button onclick="showEveryIssue()">History</button>
+
+    <div id="memberOptions" style="display: none;">
+        <h2>Welcome to Library</h2>
+        <button onclick="showAllBooks()">Issue Book</button>
+        <button onclick="showIssuedBooks()">Return Book</button>
+    </div>
+
+    <div id="bookSection" style="display: none;">
+        <h2>Available Books</h2>
+        <div id="bookList"></div>
+    </div>
+
+    <div id="issuedSection" style="display: none;">
+        <h2>My Issued Books</h2>
+        <div id="issuedBookList"></div>
+    </div>
+
+    <div id="historySection" style="display: none;">
+        <h2>Full History</h2>
+        <div id="issueList"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
